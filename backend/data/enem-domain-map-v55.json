@@ -1,0 +1,9 @@
+{
+  "version": 55,
+  "areas": {
+    "Matemática": {"competencies":[{"id":"MAT-C1","name":"Números, proporções e variação","skills":[{"id":"MAT-FRAC-01","name":"Frações e decimais","prerequisites":[]},{"id":"MAT-PROP-01","name":"Razão e proporção","prerequisites":["MAT-FRAC-01"]},{"id":"MAT-PCT-01","name":"Porcentagem","prerequisites":["MAT-FRAC-01","MAT-PROP-01"]}]},{"id":"MAT-C2","name":"Álgebra e modelagem","skills":[{"id":"MAT-EQ-01","name":"Equações do 1º grau","prerequisites":["MAT-FRAC-01"]},{"id":"MAT-FUN-01","name":"Funções e leitura de gráficos","prerequisites":["MAT-EQ-01"]}]}]},
+    "Ciências da Natureza": {"competencies":[{"id":"CN-QUI-ORG","name":"Química orgânica e representações","skills":[{"id":"QUI-REP-01","name":"Representações e fórmula em bastão","prerequisites":[]},{"id":"QUI-ORG-01","name":"Funções orgânicas: carboxila","prerequisites":["QUI-REP-01"]}]},{"id":"CN-FIS-MEC","name":"Mecânica","skills":[{"id":"FIS-MEC-01","name":"Força e movimento","prerequisites":["MAT-PROP-01"]}]},{"id":"CN-BIO-CEL","name":"Biologia celular","skills":[{"id":"BIO-CEL-00","name":"Célula, DNA e cromossomos","prerequisites":[]},{"id":"BIO-CEL-01","name":"Divisão celular","prerequisites":["BIO-CEL-00"]}]}]},
+    "Ciências Humanas": {"competencies":[{"id":"CH-HIS-IND","name":"Transformações do mundo do trabalho","skills":[{"id":"HUM-HIS-01","name":"Revolução Industrial","prerequisites":[]}]},{"id":"CH-GEO-URB","name":"Espaço urbano","skills":[{"id":"HUM-GEO-01","name":"Urbanização","prerequisites":[]}]}]},
+    "Linguagens e Redação": {"competencies":[{"id":"LIN-C1","name":"Leitura e produção de sentidos","skills":[{"id":"LIN-INT-01","name":"Interpretação textual","prerequisites":[]}]},{"id":"RED-C1","name":"Argumentação e projeto de texto","skills":[{"id":"RED-ARG-01","name":"Argumentação","prerequisites":["LIN-INT-01"]}]}]}
+  }
+}
