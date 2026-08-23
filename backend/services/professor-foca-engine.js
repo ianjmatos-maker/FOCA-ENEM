@@ -1,0 +1,8 @@
+const fs=require('fs'),path=require('path');
+const tracks=JSON.parse(fs.readFileSync(path.join(__dirname,'..','learning-tracks.json'),'utf8')).tracks;
+function track(skillId){return tracks.find(x=>x.skillId===skillId)||null}
+function publicStep(step,index,total,level='standard'){const content=step.variants?.[level]||step.content||null;return{index,total,type:step.type,title:step.title,content,prompt:step.prompt||null,options:step.options||null,hint:step.hint||null,narration:{text:step.narrationText||content||step.prompt||'',language:'pt-BR'},check:step.check?{prompt:step.check.prompt,options:step.check.options}:null}}
+function getStep(skillId,index,level='standard'){const t=track(skillId);if(!t)return null;const step=t.steps[index];if(!step)return null;return{track:{skillId:t.skillId,subject:t.subject,topic:t.topic},step:publicStep(step,index,t.steps.length,level)}}
+function answer(skillId,index,selected){const t=track(skillId),s=t?.steps[index];if(!s||s.answer==null)return null;const correct=Number(selected)===s.answer;return{correct,selected:Number(selected),hint:correct?null:(s.hint||'Revise a explicação e tente identificar a relação principal.'),correctIndex:s.answer}}
+function checkAnswer(skillId,index,selected){const t=track(skillId),s=t?.steps[index],c=s?.check;if(!c)return null;const correct=Number(selected)===c.answer;return{correct,selected:Number(selected),correctIndex:c.answer}}
+module.exports={track,getStep,answer,checkAnswer};

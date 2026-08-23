@@ -1,0 +1,10 @@
+{
+  "version":58,
+  "pairs":[
+    {"a":"mitose","b":"meiose","skill":"BIO-CEL-01","contrast":"Mitose mantém o número de cromossomos; meiose reduz pela metade e participa da formação de gametas."},
+    {"a":"massa","b":"peso","skill":"FIS-MEC-01","contrast":"Massa mede quantidade de matéria/inércia; peso é força gravitacional e depende de g."},
+    {"a":"média","b":"mediana","skill":"MAT-EST-01","contrast":"Média usa a soma dividida pela quantidade; mediana é o valor central após ordenar os dados."},
+    {"a":"efeito estufa","b":"aquecimento global","skill":"HUM-GEO-AMB-01","contrast":"Efeito estufa é um fenômeno natural; aquecimento global é o aumento da temperatura média associado à intensificação desse efeito, sobretudo por atividades humanas."},
+    {"a":"carbonila","b":"carboxila","skill":"QUI-ORG-01","contrast":"Carbonila é C=O; carboxila é -COOH, reunindo C=O e O-H no mesmo carbono."}
+  ]
+}
